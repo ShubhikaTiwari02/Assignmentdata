@@ -1,5 +1,4 @@
 package com.techment.oopsAssignment;
-
 import java.util.Scanner;
 
 class Book{
@@ -7,6 +6,9 @@ class Book{
 	private String title;
 	private String author;
 	private float price;
+	
+	
+	
 	
 	public Book(int bookno, String title, String author, float price) {
 		super();
@@ -104,4 +106,4 @@ Scanner scanner = new Scanner(System.in);
 	}
 
 }
-	
+

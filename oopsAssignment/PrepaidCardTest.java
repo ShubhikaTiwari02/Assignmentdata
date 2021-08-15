@@ -1,5 +1,4 @@
 package com.techment.oopsAssignment;
-
 import java.util.Scanner;
 
 abstract class PrepaidCard{
@@ -99,7 +98,6 @@ class TravelCard extends PrepaidCard implements Rewardable{
 	int rewardPoints;
 	@Override
 	boolean swipeCard(int amount) {
-		// TODO Auto-generated method stub
 		if(amount<swipeLimit && amount<AvailableBalance)
 		{    
 			
@@ -132,6 +130,7 @@ public class PrepaidCardTest {
 		    System.out.println("Enter swipe limit ");
 		    double swipe = scanner.nextInt();
 		
+		    //PrepaidCard p_card = new PrepaidCard();
 		    
 		    
 	    System.out.println("Enter amount ");
@@ -140,6 +139,9 @@ public class PrepaidCardTest {
 	   boolean value = obj.swipeCard(amount*60);
 	   
 
+	    
+	   
+	   
 	   System.out.println("Details are ----------");
 	   
 	   System.out.println("Card no :"+obj.getCardNo());
